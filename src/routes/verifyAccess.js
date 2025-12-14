@@ -4,11 +4,12 @@ const { verifySchema } = require("../schemas/verifySchema");
 const { isOutsideOfficeHour } = require("../services/timeService");
 const { getDeviceId, isNewDevice } = require("../services/deviceService");
 const { auditLog } = require("../utils/logger");
+const { apiKeyAuth } = require("../middlewares/apiKeyAuth");
 
 module.exports = async function (app) {
   app.post(
     "/v1/verify-access",
-    { schema: verifySchema },
+    { preHandler: apiKeyAuth, schema: verifySchema },
     async (request, reply) => {
       const deviceId = getDeviceId(request);
       const deviceIsNew = isNewDevice(deviceId);
