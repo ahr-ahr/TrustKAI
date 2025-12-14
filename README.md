@@ -123,3 +123,15 @@ Fokus pada risk mitigation dan access decision
 Ahmad Haikal Rizal
 Zero Trust Security Engine
 ````
+
+## 🔄 Versioning
+
+- **v1.0.0** — Zero Trust Access Engine (MVP)
+- **v2.0.0 (In Progress)** — API Key, Redis device memory, rate limiting
+
+## 🚧 TrustKAI V2 (Planned Features)
+
+- API Key authentication
+- Device memory with Redis
+- Rate limiting
+- Automated testing

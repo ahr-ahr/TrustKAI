@@ -5,7 +5,8 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "dev": "node src/server.js"
+    "dev": "node src/server.js",
+    "lint": "echo \"lint placeholder\""
   },
   "keywords": [
     "zero-trust",
