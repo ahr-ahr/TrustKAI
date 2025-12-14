@@ -1,4 +1,7 @@
-const { isValidApiKey } = require("../services/apiKeyService");
+const {
+  getApiKeyRecord,
+  isApiKeyActive,
+} = require("../services/apiKeyService");
 
 function apiKeyAuth(request, reply, done) {
   const headerName = process.env.API_KEY_HEADER || "x-api-key";
@@ -11,14 +14,28 @@ function apiKeyAuth(request, reply, done) {
     });
   }
 
-  if (!isValidApiKey(apiKey)) {
+  const record = getApiKeyRecord(apiKey);
+
+  if (!record) {
     return reply.code(403).send({
       error: "API_KEY_INVALID",
       message: "Invalid API key",
     });
   }
 
-  // API key valid → lanjut
+  if (!isApiKeyActive(record)) {
+    return reply.code(403).send({
+      error: "API_KEY_INACTIVE",
+      message: "API key is inactive",
+    });
+  }
+
+  // attach metadata
+  request.apiClient = {
+    name: record.name,
+    tier: record.tier,
+  };
+
   done();
 }
 

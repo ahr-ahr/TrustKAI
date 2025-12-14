@@ -41,6 +41,8 @@ module.exports = async function (app) {
         role: context.role,
         device_id: deviceId.substring(0, 12),
         ip: request.ip,
+        client: request.apiClient?.name,
+        tier: request.apiClient?.tier,
       });
 
       return {
