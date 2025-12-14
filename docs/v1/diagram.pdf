@@ -1,0 +1,113 @@
+## 📄 Diagram Arsitektur TrustKAI V1 (Versi Teks – Dokumentasi)
+
+```text
++----------------------+
+|  Client / Application|
++----------+-----------+
+           |
+           | HTTP Request
+           v
++----------------------+
+|   Fastify API        |
+|   (TrustKAI V1)      |
++----------+-----------+
+           |
+           | Validate Request
+           v
++----------------------+
+| Schema Validation    |
+| (JSON Schema)        |
++----------+-----------+
+           |
+           | Build Context
+           v
++----------------------+
+| Context Builder      |
+| - Time Service       |
+| - Device Service     |
++----------+-----------+
+           |
+           | Calculate Risk
+           v
++----------------------+
+| Risk Engine          |
+| (Rule-based)         |
++----------+-----------+
+           |
+           | Make Decision
+           v
++----------------------+
+| Decision Engine      |
+| (ENV Threshold)      |
++----------+-----------+
+           |
+           | Write Log
+           v
++----------------------+
+| Audit Logger         |
+| (Structured Log)     |
++----------+-----------+
+           |
+           | Response
+           v
++----------------------+
+| Response to Client   |
++----------------------+
+```
+
+---
+
+## 🔎 Penjelasan Singkat (Wajib di Docs)
+
+* **Client / Application**
+  Sistem eksternal yang menggunakan TrustKAI (bukan user langsung).
+
+* **Fastify API**
+  Pintu masuk utama TrustKAI.
+
+* **Schema Validation**
+  Memastikan request valid sebelum diproses.
+
+* **Context Builder**
+  Menghitung konteks akses secara server-side:
+
+  * Waktu akses
+  * Perangkat (device)
+
+* **Risk Engine**
+  Menghitung skor risiko berdasarkan rule.
+
+* **Decision Engine**
+  Menentukan keputusan akses:
+
+  * ALLOW
+  * CHALLENGE
+  * BLOCK
+
+* **Audit Logger**
+  Mencatat seluruh keputusan keamanan.
+
+* **Response to Client**
+  Hasil akhir dikirim kembali ke client.
+
+---
+
+## 📌 Diagram Flow Zero Trust (Versi Teks)
+
+```text
+Request Masuk
+      ↓
+Validasi Schema
+      ↓
+Hitung Context
+      ↓
+Hitung Risk Score
+      ↓
+Decision Engine
+      ↓
+Audit Log
+      ↓
+Response
+```
+
+> “Diagram di atas menunjukkan arsitektur TrustKAI V1 yang bekerja sebagai Zero Trust Access Engine. Setiap request diproses melalui validasi, perhitungan konteks, penghitungan risiko, pengambilan keputusan, serta pencatatan audit log sebelum respons dikirim ke client.”

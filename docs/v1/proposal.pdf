@@ -1,0 +1,133 @@
+# 📄 PROPOSAL PROYEK
+
+## PENGEMBANGAN TRUSTKAI V1
+
+### ZERO TRUST ACCESS ENGINE BERBASIS API
+
+---
+
+## 1. Pendahuluan
+
+### 1.1 Latar Belakang
+
+Perkembangan teknologi informasi membuat sistem digital semakin banyak digunakan, baik untuk aplikasi web, dashboard admin, maupun layanan API. Namun, banyak sistem keamanan masih menggunakan pendekatan tradisional, yaitu mempercayai pengguna setelah berhasil login.
+
+Pendekatan tersebut memiliki kelemahan, karena setelah login sistem sering kali tidak melakukan verifikasi ulang terhadap setiap aktivitas pengguna. Hal ini berpotensi menimbulkan risiko keamanan seperti penyalahgunaan akun, akses dari perangkat tidak dikenal, dan serangan dari dalam sistem.
+
+Oleh karena itu, dibutuhkan pendekatan keamanan yang lebih ketat dan adaptif, salah satunya adalah konsep **Zero Trust**, yaitu prinsip keamanan yang tidak langsung mempercayai pengguna maupun perangkat, melainkan selalu melakukan verifikasi pada setiap permintaan akses.
+
+---
+
+### 1.2 Rumusan Masalah
+
+Berdasarkan latar belakang tersebut, rumusan masalah dalam proyek ini adalah:
+
+1. Bagaimana membangun sistem keamanan yang tidak langsung mempercayai pengguna setelah login?
+2. Bagaimana menentukan tingkat risiko dari setiap permintaan akses?
+3. Bagaimana menghasilkan keputusan akses yang aman dan terukur?
+
+---
+
+## 2. Tujuan Proyek
+
+Tujuan dari pengembangan **TrustKAI V1** adalah:
+
+1. Membangun **Zero Trust Access Engine** berbasis API.
+2. Mengimplementasikan sistem **risk-based access control**.
+3. Menghasilkan keputusan akses berupa **ALLOW, CHALLENGE, atau BLOCK**.
+4. Menyediakan sistem audit log sebagai bukti pengambilan keputusan keamanan.
+
+---
+
+## 3. Manfaat Proyek
+
+Manfaat dari proyek TrustKAI V1 antara lain:
+
+* Memberikan contoh implementasi konsep Zero Trust dalam sistem nyata.
+* Meningkatkan pemahaman tentang keamanan backend dan API.
+* Menjadi portofolio proyek non-CRUD bagi siswa jurusan RPL.
+* Dapat dikembangkan lebih lanjut ke versi yang lebih kompleks.
+
+---
+
+## 4. Ruang Lingkup Proyek
+
+Ruang lingkup TrustKAI V1 meliputi:
+
+* Sistem berbasis **backend API** (tanpa frontend).
+* Validasi request menggunakan schema.
+* Perhitungan risiko berdasarkan konteks:
+
+  * Role pengguna
+  * Perangkat yang digunakan
+  * Waktu akses
+* Pengambilan keputusan akses.
+* Pencatatan audit log.
+
+Di luar ruang lingkup:
+
+* Sistem billing
+* Dashboard user
+* Database skala besar
+* Kecerdasan buatan (AI)
+
+---
+
+## 5. Metodologi Pengembangan
+
+Metodologi yang digunakan dalam pengembangan TrustKAI V1 adalah:
+
+1. Analisis kebutuhan sistem keamanan.
+2. Perancangan arsitektur sistem.
+3. Implementasi backend menggunakan Fastify.
+4. Pengujian fungsional sistem.
+5. Dokumentasi dan evaluasi hasil.
+
+---
+
+## 6. Gambaran Sistem TrustKAI V1
+
+TrustKAI V1 bekerja dengan alur sebagai berikut:
+
+1. Client mengirim request ke API TrustKAI.
+2. Sistem melakukan validasi data request.
+3. Sistem menghitung konteks akses (waktu dan perangkat).
+4. Sistem menghitung skor risiko.
+5. Sistem menentukan keputusan akses.
+6. Sistem mencatat hasil ke audit log.
+7. Sistem mengirim respons ke client.
+
+---
+
+## 7. Teknologi yang Digunakan
+
+Teknologi yang digunakan dalam proyek ini adalah:
+
+* **Node.js**
+* **Fastify Framework**
+* JavaScript (CommonJS)
+* dotenv untuk konfigurasi lingkungan
+* JSON Schema untuk validasi request
+
+---
+
+## 8. Hasil yang Diharapkan
+
+Hasil yang diharapkan dari proyek TrustKAI V1 adalah:
+
+* Sistem Zero Trust Access Engine yang dapat berjalan dengan baik.
+* API yang mampu menentukan keputusan akses secara otomatis.
+* Audit log yang mencatat setiap keputusan keamanan.
+* Dokumentasi sistem yang siap dipresentasikan.
+
+---
+
+## 9. Penutup
+
+Dengan adanya proyek TrustKAI V1, diharapkan dapat memberikan gambaran nyata mengenai penerapan konsep Zero Trust dalam sistem keamanan modern. Proyek ini juga diharapkan menjadi dasar untuk pengembangan lanjutan pada versi berikutnya.
+
+---
+
+**Penyusun**
+Ahmad Haikal Rizal
+Jurusan Rekayasa Perangkat Lunak (RPL)

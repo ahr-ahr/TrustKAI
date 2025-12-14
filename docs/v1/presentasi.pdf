@@ -1,0 +1,230 @@
+# 🖥️ SLIDE PRESENTASI TRUSTKAI V1
+
+**Zero Trust Access Engine**
+
+---
+
+## 🟦 SLIDE 1 — COVER
+
+**TRUSTKAI V1**
+**Zero Trust Access Engine Berbasis API**
+
+Nama: **Ahmad Haikal Rizal**
+Jurusan: **Rekayasa Perangkat Lunak (RPL)**
+Sekolah: *(isi nama sekolah)*
+Tahun: 2025
+
+---
+
+## 🟦 SLIDE 2 — LATAR BELAKANG
+
+**Permasalahan Keamanan Sistem**
+
+* Banyak sistem hanya aman saat login
+* Setelah login, sistem langsung percaya pengguna
+* Risiko:
+
+  * Akses dari device tidak dikenal
+  * Penyalahgunaan akun
+  * Serangan dari dalam sistem
+
+👉 Diperlukan sistem keamanan yang memverifikasi **setiap request**.
+
+---
+
+## 🟦 SLIDE 3 — KONSEP ZERO TRUST
+
+**Apa itu Zero Trust?**
+
+* Never Trust, Always Verify
+* Tidak ada user atau device yang langsung dipercaya
+* Setiap request harus diverifikasi ulang
+* Keamanan berbasis konteks, bukan hanya login
+
+---
+
+## 🟦 SLIDE 4 — SOLUSI: TRUSTKAI
+
+**TrustKAI adalah:**
+
+* Zero Trust Access Engine
+* Berbasis **Backend API**
+* Digunakan oleh aplikasi lain
+* Tidak memiliki frontend
+
+👉 TrustKAI bertugas **menentukan keputusan akses**, bukan menampilkan UI.
+
+---
+
+## 🟦 SLIDE 5 — TUJUAN TRUSTKAI V1
+
+Tujuan pembuatan TrustKAI V1:
+
+* Membangun Zero Trust Access Engine
+* Menghitung risiko akses secara otomatis
+* Menghasilkan keputusan:
+
+  * **ALLOW**
+  * **CHALLENGE**
+  * **BLOCK**
+* Menyediakan audit log keamanan
+
+---
+
+## 🟦 SLIDE 6 — ARSITEKTUR SISTEM
+
+**Arsitektur TrustKAI V1**
+
+Client
+↓
+Fastify API
+↓
+Schema Validation
+↓
+Context Builder (Time & Device)
+↓
+Risk Engine
+↓
+Decision Engine
+↓
+Audit Logger
+↓
+Response ke Client
+
+---
+
+## 🟦 SLIDE 7 — FLOW ZERO TRUST
+
+**Alur Kerja TrustKAI**
+
+1. Client mengirim request
+2. Sistem memvalidasi data
+3. Sistem menghitung konteks akses
+4. Sistem menghitung risk score
+5. Sistem menentukan decision
+6. Sistem mencatat audit log
+7. Response dikirim ke client
+
+---
+
+## 🟦 SLIDE 8 — RISK ENGINE
+
+**Risk-Based Access Control**
+
+Risk dihitung berdasarkan:
+
+* Role pengguna
+* Device yang digunakan
+* Waktu akses
+
+Contoh:
+
+* Device baru → +30
+* Admin role → +10
+* Di luar jam kerja → +25
+
+---
+
+## 🟦 SLIDE 9 — DECISION ENGINE
+
+**Decision Engine TrustKAI**
+
+Keputusan diambil berdasarkan risk score:
+
+* Risk < 40 → **ALLOW**
+* Risk ≥ 40 → **CHALLENGE**
+* Risk ≥ 60 → **BLOCK**
+
+Threshold dapat diatur melalui konfigurasi (`.env`).
+
+---
+
+## 🟦 SLIDE 10 — CONTOH KASUS
+
+**Kasus: Admin Mengakses Sistem**
+
+Kondisi:
+
+* Role: Admin
+* Device: Baru
+* Waktu: Jam kerja
+
+Perhitungan:
+
+* Device baru (+30)
+* Admin role (+10)
+
+**Risk score = 40**
+**Decision = CHALLENGE**
+
+---
+
+## 🟦 SLIDE 11 — AUDIT LOG
+
+**Audit Trail TrustKAI**
+
+Setiap keputusan dicatat:
+
+* Waktu akses
+* Role pengguna
+* Device ID
+* Risk score
+* Decision
+
+Tujuan:
+
+* Monitoring
+* Keamanan
+* Bukti pengambilan keputusan
+
+---
+
+## 🟦 SLIDE 12 — TEKNOLOGI YANG DIGUNAKAN
+
+**Tech Stack TrustKAI V1**
+
+* Node.js
+* Fastify
+* JavaScript
+* dotenv
+* JSON Schema Validation
+
+---
+
+## 🟦 SLIDE 13 — STATUS PROYEK
+
+**Status TrustKAI V1**
+
+* Core Zero Trust Engine: ✅ Selesai
+* Risk & Decision Engine: ✅ Berjalan
+* Logging & Audit: ✅ Aktif
+
+👉 TrustKAI V1 **di-freeze** sebagai MVP.
+
+---
+
+## 🟦 SLIDE 14 — PENGEMBANGAN SELANJUTNYA
+
+**Rencana Pengembangan**
+
+* V2:
+
+  * Redis
+  * API Key
+  * Device memory
+* V3:
+
+  * Risk Engine berbasis Go
+  * High performance scale
+
+---
+
+## 🟦 SLIDE 15 — PENUTUP
+
+**Kesimpulan**
+
+* TrustKAI menerapkan konsep Zero Trust
+* Keamanan dilakukan pada setiap request
+* Sistem modular dan dapat dikembangkan
+
+**Terima Kasih**
