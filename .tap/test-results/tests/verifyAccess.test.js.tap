@@ -1,0 +1,39 @@
+🧪 Redis mocked (test mode)
+TAP version 14
+{"level":30,"time":1765719321398,"pid":19816,"hostname":"LAPTOP-S5DOO476","reqId":"req-1","req":{"method":"POST","url":"/v1/verify-access","host":"localhost:80","remoteAddress":"127.0.0.1"},"msg":"incoming request"}
+# Subtest: API key missing
+    ok 1 - should be equal
+    ok 2 - should be equal
+    1..2
+ok 1 - API key missing # time=145.808ms
+
+{"level":30,"time":1765719321440,"pid":19816,"hostname":"LAPTOP-S5DOO476","reqId":"req-1","req":{"method":"POST","url":"/v1/verify-access","host":"localhost:80","remoteAddress":"127.0.0.1"},"msg":"incoming request"}
+{"level":30,"time":1765719321406,"pid":19816,"hostname":"LAPTOP-S5DOO476","reqId":"req-1","res":{"statusCode":401},"responseTime":7.592300057411194,"msg":"request completed"}
+{"level":30,"time":1765719321445,"pid":19816,"hostname":"LAPTOP-S5DOO476","reqId":"req-1","res":{"statusCode":403},"responseTime":5.129899978637695,"msg":"request completed"}
+# Subtest: API key invalid
+    ok 1 - should be equal
+    ok 2 - should be equal
+    1..2
+ok 2 - API key invalid # time=31.62ms
+
+{"level":30,"time":1765719321471,"pid":19816,"hostname":"LAPTOP-S5DOO476","reqId":"req-1","req":{"method":"POST","url":"/v1/verify-access","host":"localhost:80","remoteAddress":"127.0.0.1"},"msg":"incoming request"}
+{"timestamp":"2025-12-14T13:35:21.473Z","app":"TrustKAI","version":"v1","event":"ACCESS_DECISION","decision":"CHALLENGE","risk_score":65,"confidence":"HIGH","reasons":["NEW_DEVICE","OUTSIDE_OFFICE_HOUR","ADMIN_ROLE"],"role":"admin","device_id":"c2a0a3143b65","ip":"127.0.0.1","client":"internal-dashboard","tier":"basic"}
+{"level":30,"time":1765719321474,"pid":19816,"hostname":"LAPTOP-S5DOO476","reqId":"req-1","res":{"statusCode":200},"responseTime":2.8926000595092773,"msg":"request completed"}
+# Subtest: Valid request returns decision structure
+    ok 1 - should be equal
+    ok 2 - type is string
+    ok 3 - type is number
+    ok 4 - type is string
+    ok 5 - should be equal
+    1..5
+ok 3 - Valid request returns decision structure # time=29.046ms
+
+{"level":30,"time":1765719321501,"pid":19816,"hostname":"LAPTOP-S5DOO476","reqId":"req-1","req":{"method":"POST","url":"/v1/verify-access","host":"localhost:80","remoteAddress":"127.0.0.1"},"msg":"incoming request"}
+{"timestamp":"2025-12-14T13:35:21.501Z","app":"TrustKAI","version":"v1","event":"ACCESS_DECISION","decision":"CHALLENGE","risk_score":65,"confidence":"HIGH","reasons":["NEW_DEVICE","OUTSIDE_OFFICE_HOUR","ADMIN_ROLE"],"role":"admin","device_id":"c2a0a3143b65","ip":"127.0.0.1","client":"internal-dashboard","tier":"basic"}
+{"level":30,"time":1765719321502,"pid":19816,"hostname":"LAPTOP-S5DOO476","reqId":"req-1","res":{"statusCode":200},"responseTime":1.0255000591278076,"msg":"request completed"}
+# Subtest: Confidence matches risk score
+    ok 1 - should be equal
+    1..1
+ok 4 - Confidence matches risk score # time=27.183ms
+
+1..4

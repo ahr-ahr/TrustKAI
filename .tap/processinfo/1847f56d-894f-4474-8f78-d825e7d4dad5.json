@@ -1,0 +1,266 @@
+{
+  "date": "2025-12-14T13:35:19.677Z",
+  "argv": [
+    "C:\\nvm4w\\nodejs\\node.exe",
+    "C:\\TrustKAI\\tests\\verifyAccess.test.js"
+  ],
+  "execArgv": [
+    "--import=file:///C:/TrustKAI/node_modules/@tapjs/typescript/dist/esm/import.mjs",
+    "--import=file:///C:/TrustKAI/node_modules/@tapjs/mock/dist/esm/import.mjs",
+    "--enable-source-maps",
+    "--import=file:///C:/TrustKAI/node_modules/@tapjs/processinfo/dist/esm/import.mjs"
+  ],
+  "NODE_OPTIONS": "\"--import=file:///C:/TrustKAI/node_modules/@tapjs/processinfo/dist/esm/import.mjs\"",
+  "cwd": "C:\\TrustKAI",
+  "pid": 19816,
+  "ppid": 5252,
+  "parent": null,
+  "uuid": "1847f56d-894f-4474-8f78-d825e7d4dad5",
+  "files": [
+    "C:\\TrustKAI\\tests\\verifyAccess.test.js",
+    "C:\\TrustKAI\\node_modules\\@tapjs\\typescript\\dist\\esm\\import.mjs",
+    "C:\\TrustKAI\\node_modules\\@isaacs\\ts-node-temp-fork-for-pr-2009\\import.mjs",
+    "C:\\TrustKAI\\node_modules\\@isaacs\\ts-node-temp-fork-for-pr-2009\\import-loader.mjs",
+    "C:\\TrustKAI\\node_modules\\@tapjs\\mock\\dist\\esm\\import.mjs",
+    "C:\\TrustKAI\\node_modules\\@tapjs\\mock\\dist\\esm\\mock-service.js",
+    "C:\\TrustKAI\\node_modules\\@tapjs\\stack\\dist\\esm\\index.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\index.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\is-relative-require.js",
+    "C:\\TrustKAI\\node_modules\\@tapjs\\mock\\dist\\esm\\export-line.js",
+    "C:\\TrustKAI\\node_modules\\@tapjs\\mock\\dist\\esm\\munge-mocks.js",
+    "C:\\TrustKAI\\node_modules\\@tapjs\\mock\\dist\\esm\\resolve-mock-entry-point.js",
+    "C:\\TrustKAI\\node_modules\\@tapjs\\mock\\dist\\esm\\service-key.js",
+    "C:\\TrustKAI\\node_modules\\@tapjs\\stack\\dist\\esm\\call-site-like.js",
+    "C:\\TrustKAI\\node_modules\\@tapjs\\stack\\dist\\esm\\require-resolve.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\get-all-conditional-values.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\get-all-conditions.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\get-unique-condition-sets.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\resolve-all-exports.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\resolve-all-local-imports.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\resolve-conditional-value.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\resolve-import.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\is-windows.js",
+    "C:\\TrustKAI\\node_modules\\@tapjs\\stack\\dist\\esm\\parse.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\get-conditional-values-list.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\errors.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\get-named-exports-list.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\read-pkg.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\resolve-export.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\star-glob.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\to-path.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\file-exists.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\find-dep-package.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\to-file-url.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\resolve-dependency-export.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\resolve-package-import.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\read-json.js",
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\find-star-match.js",
+    "C:\\TrustKAI\\node_modules\\glob\\dist\\esm\\index.js",
+    "C:\\TrustKAI\\node_modules\\walk-up-path\\dist\\esm\\index.js",
+    "C:\\TrustKAI\\node_modules\\minimatch\\dist\\esm\\index.js",
+    "C:\\TrustKAI\\node_modules\\glob\\dist\\esm\\has-magic.js",
+    "C:\\TrustKAI\\node_modules\\glob\\dist\\esm\\glob.js",
+    "C:\\TrustKAI\\node_modules\\glob\\dist\\esm\\ignore.js",
+    "C:\\TrustKAI\\node_modules\\@isaacs\\brace-expansion\\dist\\esm\\index.js",
+    "C:\\TrustKAI\\node_modules\\minimatch\\dist\\esm\\assert-valid-pattern.js",
+    "C:\\TrustKAI\\node_modules\\minimatch\\dist\\esm\\ast.js",
+    "C:\\TrustKAI\\node_modules\\minimatch\\dist\\esm\\escape.js",
+    "C:\\TrustKAI\\node_modules\\minimatch\\dist\\esm\\unescape.js",
+    "C:\\TrustKAI\\node_modules\\path-scurry\\dist\\esm\\index.js",
+    "C:\\TrustKAI\\node_modules\\glob\\dist\\esm\\pattern.js",
+    "C:\\TrustKAI\\node_modules\\glob\\dist\\esm\\walker.js",
+    "C:\\TrustKAI\\node_modules\\lru-cache\\dist\\esm\\index.js",
+    "C:\\TrustKAI\\node_modules\\minipass\\dist\\esm\\index.js",
+    "C:\\TrustKAI\\node_modules\\minimatch\\dist\\esm\\brace-expressions.js",
+    "C:\\TrustKAI\\node_modules\\glob\\dist\\esm\\processor.js",
+    "C:\\TrustKAI\\node_modules\\@isaacs\\balanced-match\\dist\\esm\\index.js",
+    "C:\\TrustKAI\\node_modules\\@tapjs\\mock\\dist\\esm\\loader.mjs",
+    "C:\\TrustKAI\\node_modules\\@tapjs\\mock\\dist\\esm\\hooks.mjs",
+    "C:\\TrustKAI\\node_modules\\@tapjs\\mock\\dist\\esm\\mock-service-client.js",
+    "C:\\TrustKAI\\src\\app.js",
+    "C:\\TrustKAI\\src\\routes\\verifyAccess.js",
+    "C:\\TrustKAI\\src\\engine\\riskEngine.js",
+    "C:\\TrustKAI\\src\\policies\\riskPolicy.js",
+    "C:\\TrustKAI\\src\\engine\\decisionEngine.js",
+    "C:\\TrustKAI\\src\\schemas\\verifySchema.js",
+    "C:\\TrustKAI\\src\\services\\timeService.js",
+    "C:\\TrustKAI\\src\\services\\deviceService.js",
+    "C:\\TrustKAI\\src\\utils\\logger.js",
+    "C:\\TrustKAI\\src\\middlewares\\apiKeyAuth.js",
+    "C:\\TrustKAI\\src\\services\\apiKeyService.js",
+    "C:\\TrustKAI\\src\\services\\deviceStore.js",
+    "C:\\TrustKAI\\src\\services\\redisClient.js",
+    "C:\\TrustKAI\\src\\middlewares\\rateLimit.js",
+    "C:\\TrustKAI\\src\\services\\rateLimitStore.js",
+    "C:\\TrustKAI\\src\\utils\\confidence.js"
+  ],
+  "sources": {
+    "C:\\TrustKAI\\node_modules\\@tapjs\\typescript\\dist\\esm\\import.mjs": [
+      "C:\\TrustKAI\\node_modules\\@tapjs\\typescript\\src\\import.mts"
+    ],
+    "C:\\TrustKAI\\node_modules\\@tapjs\\mock\\dist\\esm\\import.mjs": [
+      "C:\\TrustKAI\\node_modules\\@tapjs\\mock\\src\\import.mts"
+    ],
+    "C:\\TrustKAI\\node_modules\\@tapjs\\mock\\dist\\esm\\mock-service.js": [
+      "C:\\TrustKAI\\node_modules\\@tapjs\\mock\\src\\mock-service.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\@tapjs\\stack\\dist\\esm\\index.js": [
+      "C:\\TrustKAI\\node_modules\\@tapjs\\stack\\src\\index.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\index.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\index.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\is-relative-require.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\is-relative-require.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\@tapjs\\mock\\dist\\esm\\export-line.js": [
+      "C:\\TrustKAI\\node_modules\\@tapjs\\mock\\src\\export-line.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\@tapjs\\mock\\dist\\esm\\munge-mocks.js": [
+      "C:\\TrustKAI\\node_modules\\@tapjs\\mock\\src\\munge-mocks.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\@tapjs\\mock\\dist\\esm\\resolve-mock-entry-point.js": [
+      "C:\\TrustKAI\\node_modules\\@tapjs\\mock\\src\\resolve-mock-entry-point.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\@tapjs\\mock\\dist\\esm\\service-key.js": [
+      "C:\\TrustKAI\\node_modules\\@tapjs\\mock\\src\\service-key.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\@tapjs\\stack\\dist\\esm\\call-site-like.js": [
+      "C:\\TrustKAI\\node_modules\\@tapjs\\stack\\src\\call-site-like.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\@tapjs\\stack\\dist\\esm\\require-resolve.js": [
+      "C:\\TrustKAI\\node_modules\\@tapjs\\stack\\src\\require-resolve.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\get-all-conditional-values.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\get-all-conditional-values.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\get-all-conditions.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\get-all-conditions.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\get-unique-condition-sets.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\get-unique-condition-sets.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\resolve-all-exports.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\resolve-all-exports.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\resolve-all-local-imports.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\resolve-all-local-imports.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\resolve-conditional-value.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\resolve-conditional-value.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\resolve-import.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\resolve-import.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\is-windows.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\is-windows.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\@tapjs\\stack\\dist\\esm\\parse.js": [
+      "C:\\TrustKAI\\node_modules\\@tapjs\\stack\\src\\parse.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\get-conditional-values-list.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\get-conditional-values-list.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\errors.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\errors.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\get-named-exports-list.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\get-named-exports-list.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\read-pkg.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\read-pkg.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\resolve-export.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\resolve-export.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\star-glob.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\star-glob.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\to-path.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\to-path.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\file-exists.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\file-exists.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\find-dep-package.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\find-dep-package.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\to-file-url.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\to-file-url.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\resolve-dependency-export.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\resolve-dependency-export.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\resolve-package-import.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\resolve-package-import.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\read-json.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\read-json.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\resolve-import\\dist\\esm\\find-star-match.js": [
+      "C:\\TrustKAI\\node_modules\\resolve-import\\src\\find-star-match.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\glob\\dist\\esm\\index.js": [
+      "C:\\TrustKAI\\node_modules\\glob\\src\\index.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\walk-up-path\\dist\\esm\\index.js": [
+      "C:\\TrustKAI\\node_modules\\walk-up-path\\src\\index.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\minimatch\\dist\\esm\\index.js": [
+      "C:\\TrustKAI\\node_modules\\minimatch\\src\\index.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\glob\\dist\\esm\\has-magic.js": [
+      "C:\\TrustKAI\\node_modules\\glob\\src\\has-magic.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\glob\\dist\\esm\\glob.js": [
+      "C:\\TrustKAI\\node_modules\\glob\\src\\glob.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\glob\\dist\\esm\\ignore.js": [
+      "C:\\TrustKAI\\node_modules\\glob\\src\\ignore.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\@isaacs\\brace-expansion\\dist\\esm\\index.js": [
+      "C:\\TrustKAI\\node_modules\\@isaacs\\brace-expansion\\src\\index.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\minimatch\\dist\\esm\\assert-valid-pattern.js": [
+      "C:\\TrustKAI\\node_modules\\minimatch\\src\\assert-valid-pattern.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\minimatch\\dist\\esm\\ast.js": [
+      "C:\\TrustKAI\\node_modules\\minimatch\\src\\ast.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\minimatch\\dist\\esm\\escape.js": [
+      "C:\\TrustKAI\\node_modules\\minimatch\\src\\escape.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\minimatch\\dist\\esm\\unescape.js": [
+      "C:\\TrustKAI\\node_modules\\minimatch\\src\\unescape.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\path-scurry\\dist\\esm\\index.js": [
+      "C:\\TrustKAI\\node_modules\\path-scurry\\src\\index.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\glob\\dist\\esm\\pattern.js": [
+      "C:\\TrustKAI\\node_modules\\glob\\src\\pattern.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\glob\\dist\\esm\\walker.js": [
+      "C:\\TrustKAI\\node_modules\\glob\\src\\walker.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\lru-cache\\dist\\esm\\index.js": [
+      "C:\\TrustKAI\\node_modules\\lru-cache\\src\\index.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\minipass\\dist\\esm\\index.js": [
+      "C:\\TrustKAI\\node_modules\\minipass\\src\\index.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\minimatch\\dist\\esm\\brace-expressions.js": [
+      "C:\\TrustKAI\\node_modules\\minimatch\\src\\brace-expressions.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\glob\\dist\\esm\\processor.js": [
+      "C:\\TrustKAI\\node_modules\\glob\\src\\processor.ts"
+    ],
+    "C:\\TrustKAI\\node_modules\\@isaacs\\balanced-match\\dist\\esm\\index.js": [
+      "C:\\TrustKAI\\node_modules\\@isaacs\\balanced-match\\src\\index.ts"
+    ]
+  },
+  "root": "1847f56d-894f-4474-8f78-d825e7d4dad5",
+  "externalID": "tests/verifyAccess.test.js",
+  "code": 0,
+  "signal": null,
+  "runtime": 1857.6684
+}

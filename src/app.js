@@ -1,9 +1,10 @@
 const fastify = require("fastify");
+const verifyAccessRoute = require("./routes/verifyAccess");
 
 function buildApp() {
   const app = fastify({ logger: true });
 
-  app.register(require("./routes/verifyAccess"));
+  app.register(verifyAccessRoute);
 
   return app;
 }

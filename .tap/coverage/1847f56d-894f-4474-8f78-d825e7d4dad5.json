@@ -1,0 +1,687 @@
+{
+  "result": [
+    {
+      "scriptId": "635",
+      "url": "file:///C:/TrustKAI/src/app.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 253,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "buildApp",
+          "ranges": [
+            {
+              "startOffset": 100,
+              "endOffset": 221,
+              "count": 4
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "892",
+      "url": "file:///C:/TrustKAI/src/routes/verifyAccess.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 1909,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "module.exports",
+          "ranges": [
+            {
+              "startOffset": 651,
+              "endOffset": 1906,
+              "count": 4
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 786,
+              "endOffset": 1897,
+              "count": 2
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "893",
+      "url": "file:///C:/TrustKAI/src/engine/riskEngine.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 719,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "calculateRisk",
+          "ranges": [
+            {
+              "startOffset": 53,
+              "endOffset": 678,
+              "count": 2
+            },
+            {
+              "startOffset": 246,
+              "endOffset": 327,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "894",
+      "url": "file:///C:/TrustKAI/src/policies/riskPolicy.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 241,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "895",
+      "url": "file:///C:/TrustKAI/src/engine/decisionEngine.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 379,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "makeDecision",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 339,
+              "count": 2
+            },
+            {
+              "startOffset": 219,
+              "endOffset": 246,
+              "count": 0
+            },
+            {
+              "startOffset": 315,
+              "endOffset": 338,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "896",
+      "url": "file:///C:/TrustKAI/src/schemas/verifySchema.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 274,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "897",
+      "url": "file:///C:/TrustKAI/src/services/timeService.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 342,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "isOutsideOfficeHour",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 295,
+              "count": 2
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "898",
+      "url": "file:///C:/TrustKAI/src/services/deviceService.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 620,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "getDeviceId",
+          "ranges": [
+            {
+              "startOffset": 37,
+              "endOffset": 336,
+              "count": 2
+            },
+            {
+              "startOffset": 113,
+              "endOffset": 125,
+              "count": 0
+            },
+            {
+              "startOffset": 190,
+              "endOffset": 202,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "isNewDevice",
+          "ranges": [
+            {
+              "startOffset": 470,
+              "endOffset": 568,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        }
+      ]
+    },
+    {
+      "scriptId": "899",
+      "url": "file:///C:/TrustKAI/src/utils/logger.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 361,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "auditLog",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 325,
+              "count": 2
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "900",
+      "url": "file:///C:/TrustKAI/src/middlewares/apiKeyAuth.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 886,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "apiKeyAuth",
+          "ranges": [
+            {
+              "startOffset": 93,
+              "endOffset": 848,
+              "count": 4
+            },
+            {
+              "startOffset": 267,
+              "endOffset": 389,
+              "count": 1
+            },
+            {
+              "startOffset": 389,
+              "endOffset": 453,
+              "count": 3
+            },
+            {
+              "startOffset": 453,
+              "endOffset": 571,
+              "count": 1
+            },
+            {
+              "startOffset": 571,
+              "endOffset": 606,
+              "count": 2
+            },
+            {
+              "startOffset": 606,
+              "endOffset": 729,
+              "count": 0
+            },
+            {
+              "startOffset": 729,
+              "endOffset": 847,
+              "count": 2
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "901",
+      "url": "file:///C:/TrustKAI/src/services/apiKeyService.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 638,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "getApiKeyRecord",
+          "ranges": [
+            {
+              "startOffset": 382,
+              "endOffset": 483,
+              "count": 3
+            },
+            {
+              "startOffset": 472,
+              "endOffset": 479,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 441,
+              "endOffset": 470,
+              "count": 4
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "isApiKeyActive",
+          "ranges": [
+            {
+              "startOffset": 487,
+              "endOffset": 571,
+              "count": 2
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "902",
+      "url": "file:///C:/TrustKAI/src/services/deviceStore.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 452,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "isKnownDevice",
+          "ranges": [
+            {
+              "startOffset": 107,
+              "endOffset": 254,
+              "count": 2
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "rememberDevice",
+          "ranges": [
+            {
+              "startOffset": 258,
+              "endOffset": 395,
+              "count": 2
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "903",
+      "url": "file:///C:/TrustKAI/src/services/redisClient.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 745,
+              "count": 1
+            },
+            {
+              "startOffset": 366,
+              "endOffset": 712,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "get",
+          "ranges": [
+            {
+              "startOffset": 151,
+              "endOffset": 167,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "set",
+          "ranges": [
+            {
+              "startOffset": 179,
+              "endOffset": 195,
+              "count": 2
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "incr",
+          "ranges": [
+            {
+              "startOffset": 208,
+              "endOffset": 221,
+              "count": 2
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "expire",
+          "ranges": [
+            {
+              "startOffset": 236,
+              "endOffset": 252,
+              "count": 2
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "exists",
+          "ranges": [
+            {
+              "startOffset": 267,
+              "endOffset": 280,
+              "count": 2
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "quit",
+          "ranges": [
+            {
+              "startOffset": 293,
+              "endOffset": 309,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 536,
+              "endOffset": 544,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 572,
+              "endOffset": 624,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 650,
+              "endOffset": 707,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        }
+      ]
+    },
+    {
+      "scriptId": "957",
+      "url": "file:///C:/TrustKAI/src/middlewares/rateLimit.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 962,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "rateLimit",
+          "ranges": [
+            {
+              "startOffset": 64,
+              "endOffset": 925,
+              "count": 2
+            },
+            {
+              "startOffset": 227,
+              "endOffset": 237,
+              "count": 0
+            },
+            {
+              "startOffset": 429,
+              "endOffset": 448,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 597,
+              "endOffset": 802,
+              "count": 2
+            },
+            {
+              "startOffset": 634,
+              "endOffset": 778,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 816,
+              "endOffset": 920,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        }
+      ]
+    },
+    {
+      "scriptId": "958",
+      "url": "file:///C:/TrustKAI/src/services/rateLimitStore.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 272,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "increment",
+          "ranges": [
+            {
+              "startOffset": 47,
+              "endOffset": 235,
+              "count": 2
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "959",
+      "url": "file:///C:/TrustKAI/src/utils/confidence.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 186,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "getConfidenceLevel",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 140,
+              "count": 2
+            },
+            {
+              "startOffset": 65,
+              "endOffset": 78,
+              "count": 0
+            },
+            {
+              "startOffset": 103,
+              "endOffset": 119,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    }
+  ],
+  "timestamp": 634279.461438,
+  "source-map-cache": {}
+}
