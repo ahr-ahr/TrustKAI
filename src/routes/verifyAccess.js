@@ -6,11 +6,12 @@ const { getDeviceId } = require("../services/deviceService");
 const { auditLog } = require("../utils/logger");
 const { apiKeyAuth } = require("../middlewares/apiKeyAuth");
 const { isKnownDevice, rememberDevice } = require("../services/deviceStore");
+const { rateLimit } = require("../middlewares/rateLimit");
 
 module.exports = async function (app) {
   app.post(
     "/v1/verify-access",
-    { preHandler: apiKeyAuth, schema: verifySchema },
+    { preHandler: [apiKeyAuth, rateLimit], schema: verifySchema },
     async (request, reply) => {
       const deviceId = getDeviceId(request);
 
