@@ -2,9 +2,10 @@ const { calculateRisk } = require("../engine/riskEngine");
 const { makeDecision } = require("../engine/decisionEngine");
 const { verifySchema } = require("../schemas/verifySchema");
 const { isOutsideOfficeHour } = require("../services/timeService");
-const { getDeviceId, isNewDevice } = require("../services/deviceService");
+const { getDeviceId } = require("../services/deviceService");
 const { auditLog } = require("../utils/logger");
 const { apiKeyAuth } = require("../middlewares/apiKeyAuth");
+const { isKnownDevice, rememberDevice } = require("../services/deviceStore");
 
 module.exports = async function (app) {
   app.post(
@@ -12,7 +13,10 @@ module.exports = async function (app) {
     { preHandler: apiKeyAuth, schema: verifySchema },
     async (request, reply) => {
       const deviceId = getDeviceId(request);
-      const deviceIsNew = isNewDevice(deviceId);
+
+      // 🔑 V2: cek Redis
+      const known = await isKnownDevice(deviceId);
+      const deviceIsNew = !known;
 
       const context = {
         role: request.body.role,
@@ -22,6 +26,11 @@ module.exports = async function (app) {
 
       const { risk, reasons } = calculateRisk(context);
       const decision = makeDecision(risk);
+
+      // 🧠 simpan device SETELAH decision
+      if (!known) {
+        await rememberDevice(deviceId);
+      }
 
       // 🔐 AUDIT LOG
       auditLog({

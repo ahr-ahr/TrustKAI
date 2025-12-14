@@ -5,6 +5,9 @@ function calculateRisk(context) {
   if (context.is_new_device) {
     risk += 30;
     reasons.push("NEW_DEVICE");
+  } else {
+    risk -= 10;
+    reasons.push("KNOWN_DEVICE");
   }
 
   if (context.outside_office_hour) {
