@@ -1,42 +1,47 @@
 const {
   getApiKeyRecord,
   isApiKeyActive,
+  isApiKeyExpired,
 } = require("../services/apiKeyService");
 
-function apiKeyAuth(request, reply, done) {
+async function apiKeyAuth(request, reply) {
   const headerName = process.env.API_KEY_HEADER || "x-trustkai";
   const apiKey = request.headers[headerName];
 
   if (!apiKey) {
     return reply.code(401).send({
       error: "API_KEY_MISSING",
-      message: "API key is required",
+      code: "TK-401-001",
     });
   }
 
-  const record = getApiKeyRecord(apiKey);
+  const record = await getApiKeyRecord(apiKey);
 
   if (!record) {
     return reply.code(403).send({
       error: "API_KEY_INVALID",
-      message: "Invalid API key",
+      code: "TK-403-001",
     });
   }
 
   if (!isApiKeyActive(record)) {
     return reply.code(403).send({
       error: "API_KEY_INACTIVE",
-      message: "API key is inactive",
+      code: "TK-403-002",
     });
   }
 
-  // attach metadata
+  if (isApiKeyExpired(record)) {
+    return reply.code(403).send({
+      error: "API_KEY_EXPIRED",
+      code: "TK-403-003",
+    });
+  }
+
   request.apiClient = {
     name: record.name,
     tier: record.tier,
   };
-
-  done();
 }
 
 module.exports = { apiKeyAuth };
