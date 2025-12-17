@@ -4,7 +4,7 @@ const {
 } = require("../services/apiKeyService");
 
 function apiKeyAuth(request, reply, done) {
-  const headerName = process.env.API_KEY_HEADER || "x-api-key";
+  const headerName = process.env.API_KEY_HEADER || "x-trustkai";
   const apiKey = request.headers[headerName];
 
   if (!apiKey) {

@@ -1,6 +1,8 @@
 # Changelog
 
-## [Unreleased] - TrustKAI V2 (In Progress)
+## [Unreleased] - TrustKAI V2.1 (In Progress)
+
+## [2.0.0] - TrustKAI V2
 
 - API Key authentication
 - Redis-based device memory

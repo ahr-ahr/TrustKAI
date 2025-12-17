@@ -3,7 +3,6 @@ const Redis = require("ioredis");
 let redis;
 
 if (process.env.NODE_ENV === "test") {
-  // 🧪 MOCK REDIS TOTAL (NO SOCKET)
   redis = {
     get: async () => null,
     set: async () => null,
@@ -15,11 +14,8 @@ if (process.env.NODE_ENV === "test") {
   console.log("🧪 Redis mocked (test mode)");
 } else {
   redis = new Redis(process.env.REDIS_URL || "redis://127.0.0.1:6379", {
-    lazyConnect: true,
     maxRetriesPerRequest: 1,
   });
-
-  redis.connect().catch(() => {});
 
   redis.on("connect", () => {
     console.log("🔗 Redis connected");

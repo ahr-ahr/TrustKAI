@@ -1,33 +1,33 @@
-/**
- * V2: API Key Management Service
- * - In-memory (aman untuk V2)
- * - Siap di-upgrade ke Redis / DB
- */
+const { redis } = require("./redisClient");
+const { hashApiKey } = require("../utils/hash");
 
-const API_KEYS = [
-  {
-    key: "dev-trustkai-key-123",
-    name: "internal-dashboard",
-    tier: "basic",
-    status: "active",
-  },
-  {
-    key: "dev-trustkai-key-456",
-    name: "partner-service",
-    tier: "premium",
-    status: "active",
-  },
-];
+function redisKey(hash) {
+  return `apikey:${hash}`;
+}
 
-function getApiKeyRecord(apiKey) {
-  return API_KEYS.find((item) => item.key === apiKey) || null;
+async function getApiKeyRecord(apiKey) {
+  const hash = hashApiKey(apiKey);
+  const data = await redis.get(redisKey(hash));
+  return data ? JSON.parse(data) : null;
 }
 
 function isApiKeyActive(record) {
-  return record && record.status === "active";
+  return record?.status === "active";
+}
+
+function isApiKeyExpired(record) {
+  if (!record.expires_at) return false;
+  return Date.now() / 1000 > record.expires_at;
+}
+
+async function revokeApiKey(apiKey) {
+  const hash = hashApiKey(apiKey);
+  await redis.del(redisKey(hash));
 }
 
 module.exports = {
   getApiKeyRecord,
   isApiKeyActive,
+  isApiKeyExpired,
+  revokeApiKey,
 };

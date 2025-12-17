@@ -9,5 +9,5 @@ app.listen({ port: PORT }, (err) => {
     app.log.error(err);
     process.exit(1);
   }
-  console.log(`🚀 TrustKAI V1 running on port ${PORT}`);
+  console.log(`🚀 TrustKAI V2 running on port ${PORT}`);
 });
