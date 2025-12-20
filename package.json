@@ -1,7 +1,7 @@
 {
   "name": "trustkai",
-  "version": "2.0.0",
-  "description": "TrustKAI V2 - Zero Trust Access Engine (Fastify-based API)",
+  "version": "2.0.1",
+  "description": "TrustKAI V2.1 - Zero Trust Access Engine (Fastify-based API)",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",

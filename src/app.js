@@ -6,6 +6,10 @@ function buildApp() {
 
   app.register(verifyAccessRoute);
 
+  app.register(require("./routes/admin/apiKeys"), {
+    prefix: "/v1/admin",
+  });
+
   return app;
 }
 
