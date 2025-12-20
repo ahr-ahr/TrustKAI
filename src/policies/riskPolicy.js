@@ -7,6 +7,7 @@ module.exports = {
   device: {
     new: 30,
     known: -10,
+    low_confidence_bonus: 10,
   },
   time: {
     outsideOfficeHour: 25,
