@@ -1,4 +1,4 @@
-# 🔐 TrustKAI V1
+# TrustKAI V1
 
 **TrustKAI** adalah _Zero Trust Access Engine_ berbasis API yang
 menerapkan prinsip **Never Trust, Always Verify** pada setiap request.
@@ -8,7 +8,7 @@ melindungi aplikasi, dashboard admin, dan API dari akses berisiko.
 
 ---
 
-## 🚀 Fitur Utama (V1 - MVP)
+## Fitur Utama (V1 - MVP)
 
 - Risk-based access decision
 - Rule-based risk scoring
@@ -19,7 +19,7 @@ melindungi aplikasi, dashboard admin, dan API dari akses berisiko.
 
 ---
 
-## 🧠 Konsep Zero Trust
+## Konsep Zero Trust
 
 TrustKAI **tidak langsung percaya** meskipun user sudah login.
 Setiap request akan dianalisis berdasarkan:
@@ -33,7 +33,7 @@ Keputusan akses dibuat **setiap request**, bukan hanya saat login.
 
 ---
 
-## 📦 Tech Stack
+## Tech Stack
 
 - **Node.js**
 - **Fastify**
@@ -62,7 +62,7 @@ TrustKAI-v1/
 ├─ package.json
 └─ README.md
 
-🧪 API Endpoint
+API Endpoint
 POST /v1/verify-access
 Request Body
 json
@@ -83,8 +83,8 @@ Response json
     "ADMIN_ROLE"
   ]
 }
-⚙️ Instalasi & Menjalankan
-1️⃣ Install Dependency
+Instalasi & Menjalankan
+Install Dependency
 bash
 ## Environment Setup
 
@@ -93,38 +93,38 @@ Copy `.env.example` menjadi `.env` lalu sesuaikan konfigurasi.
 ```bash
 cp .env.example .env
 npm install
-2️⃣ Jalankan Server
+Jalankan Server
 bash
 Copy code
 node src/server.js
 Server akan berjalan di:
 
 http://localhost:3000
-🎯 Tujuan V1
+Tujuan V1
 Membuktikan Zero Trust engine berjalan
 
 Menjadi dasar untuk pengembangan V2
 
 Digunakan sebagai MVP / prototype
 
-🔮 Roadmap Selanjutnya
+Roadmap Selanjutnya
 V2: API Key, Redis cache, device fingerprint lanjutan
 
 V3: Risk engine berbasis Go untuk high-performance scale
 
-⚠️ Catatan Penting
+Catatan Penting
 TrustKAI V1 bukan produk compliance resmi
 
 Tidak menggantikan sistem keamanan enterprise
 
 Fokus pada risk mitigation dan access decision
 
-👨‍💻 Author
+Author
 Ahmad Haikal Rizal
 Zero Trust Security Engine
 ````
 
-## 🔄 Versioning
+## Versioning
 
 - **v1.0.0** — Zero Trust Access Engine (MVP)
 - **v2.0.0 (In Progress)** — API Key, Redis device memory, rate limiting
